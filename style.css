@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  /*header */
+  header{
+      position: absolute;
+      top: 0px;
+      z-index: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 18px;
+    margin-top: 13px;
+    margin-left: 6rem;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+
+#icon-localização{
+    width: 25px;
+    height: 25px;
+}
+
+  #localização{
+    width: 240px;
+    height: 75px;
+    background-color: #ff0000;
+  
+    font-size: 24px;
+    color: #ffffff;
+    border: none;
+
+    margin-top: 10px;
+    margin-left: 29px;
+
+    border-radius: 9px;
+  }
+
+  #localização:hover{
+    background-color:#ff3c38;
+    cursor: pointer;
+  }
+  /* Corpo, parte 1*/
+  
+  body {
+    background-color: #fff275;
+    height: 100%;
+
+    overflow: hidden;
+  }
+  
+  main {
+    display: flex;
+  }
+  .titulo {
+    margin-top: 100px;
+    margin-left: 111px;
+    width: 23rem;
+    word-wrap: break-word;
+  
+    font-size: 30px;
+  }
+  
+  #descrição {
+    color: #a23e48;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  
+  
+  /* Corpo, parte 2*/
+  section {
+    width: 855px;
+    height: 625px;
+    background-color: #6699cc;
+  
+    display: list-item;
+  
+    margin-left: 40px;
+  
+    list-style: none;
+  }
+  .img-P {
+    display: flex;
+  
+    justify-content: space-evenly;
+  }
+  
+  #img-1 {
+    margin-top: 3rem;
+    width: 570px;
+    height: 380px;
+  
+    margin-left: 110px;
+  }
+  #img-section {
+    width: 270px;
+    height: 184px;
+  
+    overflow: hidden;
+  }
+  
+  #img-section {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  }
+  #img-section:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transition: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  
