@@ -26,36 +26,107 @@
                     Localização</button></a>
         </div>
         <section>
-            <img id="img-1" src="./img/Marco zero.jpeg" alt="Tênis-Ampliado">
-
-            <div class="img-P">
-                <div onclick="acao()" class="botton">
-                    <img id="img-section" src="./img/cais do sertão.jpg" alt="imagem do ponto turistico cais do sertão">
-                </div>
-                <img id="img-section" src="./img/brennand.jpg" alt="Estatua de brennand do outro lado do marco zero">
-                <img id="img-section" src="./img/placa-recife.jpg" alt="Grande placa com nome RECIFE">
+            <img id="img-1" src="./img/Marco zero.jpeg" alt="imagem marco zero">
+            
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+        
+            <div class="slide-show" >
+              <ul class="slides-list" >
+                <li class="slide" >
+                    <img onclick="acao()" id="img-section" src="./img/cais do sertão.jpg"
+                    alt="imagem do ponto turistico cais do sertão">
+            
+                </li>
+                <li class="slide" >
+                    <img id="img-section" src="./img/instituto-brennandjpg.jpg" alt="">
+                </li>
+                <li class="slide" >
+                    <img onclick="acao2()" id="img-section" src="./img/brennand.jpg"
+                    alt="Estatua de brennand do outro lado do marco zero">
+            
+                </li>
+                <li class="slide" >
+                    <img onclick="acao3()" id="img-section" src="./img/placa-recife.jpg"
+                    alt="Grande placa com nome RECIFE">
+                </li>
+              </ul>
             </div>
+
+             <div class="carrossel">
+                <div class="container" id="img">
+                    
+                   
+            
+               
+               
+            
+                
+                </div>
+
         </section>
 
         <div class="modal-1">
             <div onclick="fechar()" class="fechar">
-            <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão"></div>
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
+            </div>
 
-            <img class="img-modal1" src="./img/cais do sertão.jpg" alt="imagem do cais do sertão">
-            <h2 id="titulo-modal1">Cais do sertão</h2>
-            <p id="p-modal1">Construído no local de antigos armazéns do Porto do Recife, o Cais do Sertão oferece aos visitantes
+            <img class="img-modal" src="./img/cais do sertão.jpg" alt="imagem do cais do sertão">
+            <h2 id="titulo-modal">Cais do sertão</h2>
+            <p id="p-modal">Construído no local de antigos armazéns do Porto do Recife, o Cais do Sertão oferece aos
+                visitantes
                 exposições temporárias e acervo permanente, com referências à cultura sertaneja da região Nordeste, com
                 experiências sensoriais e arquitetura inovadora, em edificação que exprime em seus traços a união do
                 litoral com o sertão. </p>
-                <br>
-                <p id="p-modal1">
+            <br>
+            <p id="p-modal">
                 Os horários de funcionamento serão reduzidos: 10h às 16h dias de quinta e sexta e 11h às 17h aos
                 sábados, domingos e feriados.</p>
-                <a href="https://goo.gl/maps/TTDMeZpyDmzB9PMZ6" target="_blank">
-                    <button id="btn-modal1"> <img id="icon-localização" src="./img/icons/geo-alt.svg" alt="">Localização</button>
-                    </a>
+            <a href="https://goo.gl/maps/TTDMeZpyDmzB9PMZ6" target="_blank">
+                <button id="btn-modal"> <img id="icon-localização" src="./img/icons/geo-alt.svg"
+                        alt="">Localização</button>
+            </a>
 
         </div>
+
+        <div class="modal-2">
+            <div onclick="fechar2()" class="fechar">
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
+            </div>
+
+            <img class="img-modal" src="./img/brennand.jpg" alt="Estatua de brennand do outro lado do marco zero">
+            <h2 id="titulo-modal">Parque das esculturas de Brennand</h2>
+            <p id="p-modal">O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na
+                cidade do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do
+                artista plástico pernambucano Francisco Brennand. </p>
+
+            <a href="https://goo.gl/maps/BqBXi4amYj3xGNwRA" target="_blank">
+                <button id="btn-modal"> <img id="icon-localização" src="./img/icons/geo-alt.svg"
+                        alt="">Localização</button>
+            </a>
+
+        </div>
+
+        <div class="modal-3">
+            <div onclick="fechar3()" class="fechar">
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
+            </div>
+
+            <img class="img-modal" src="./img/placa-recife.jpg" alt="Estatua de brennand do outro lado do marco zero">
+            <h2 id="titulo-modal">Cais do sertão</h2>
+            <p id="p-modal">O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na
+                cidade do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do
+                artista plástico pernambucano Francisco Brennand. </p>
+
+            <a href="https://goo.gl/maps/vjDzuQ4LLFrv6vAm9" target="_blank">
+                <button id="btn-modal"> <img id="icon-localização" src="./img/icons/geo-alt.svg"
+                        alt="">Localização</button>
+            </a>
+
+        </div>
+
 
 
     </main>
