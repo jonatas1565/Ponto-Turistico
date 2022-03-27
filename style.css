@@ -6,7 +6,7 @@
 /* Corpo, parte 1*/
 
 body {
-  background-color: #FFD11D;
+  background-color: #ffdc52;
   height: 100%;
 
   overflow: hidden;
@@ -239,6 +239,7 @@ margin-top: 6px;
     
   }
   .modal-1, .modal-2, .modal-3, .modal-4, .modal-5 {
+    background-color: #ffdc52;
     width: 95%;
     height: 98%;
 
