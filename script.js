@@ -42,4 +42,44 @@ function fechar3(){
    modal.style.display = 'none';
 }
 //modal4
+function acao4(){
 
+    let modal = document.querySelector('.modal-4')
+
+    modal.style.display = 'block';
+}
+
+function fechar4(){
+
+    let modal = document.querySelector('.modal-4')
+
+   modal.style.display = 'none';
+}
+
+//modal5
+function acao5(){
+
+    let modal = document.querySelector('.modal-5')
+
+    modal.style.display = 'block';
+}
+
+function fechar5(){
+
+    let modal = document.querySelector('.modal-5')
+
+   modal.style.display = 'none';
+}
+
+//carrossel
+let slider = tns({
+    container : ".my-slider",
+    "items": 3,
+  "rewind": false,
+  "swipeAngle": false,
+  "speed": 800,
+  autoplay : true,
+  autoplayButtonOutput : false,
+  "mouseDrag" : true,
+  
+})

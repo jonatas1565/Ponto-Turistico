@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
     <title>Marco zero </title>
     <link rel="stylesheet" href="./style.css">
 
@@ -26,45 +28,32 @@
                     Localização</button></a>
         </div>
         <section>
-            <img id="img-1" src="./img/Marco zero.jpeg" alt="imagem marco zero">
-            
-            <input type="radio" class="slide-controller" name="slide" checked />
-            <input type="radio" class="slide-controller" name="slide" />
-            <input type="radio" class="slide-controller" name="slide" />
-            <input type="radio" class="slide-controller" name="slide" />
-        
-            <div class="slide-show" >
-              <ul class="slides-list" >
-                <li class="slide" >
-                    <img onclick="acao()" id="img-section" src="./img/cais do sertão.jpg"
-                    alt="imagem do ponto turistico cais do sertão">
-            
-                </li>
-                <li class="slide" >
-                    <img id="img-section" src="./img/instituto-brennandjpg.jpg" alt="">
-                </li>
-                <li class="slide" >
-                    <img onclick="acao2()" id="img-section" src="./img/brennand.jpg"
-                    alt="Estatua de brennand do outro lado do marco zero">
-            
-                </li>
-                <li class="slide" >
-                    <img onclick="acao3()" id="img-section" src="./img/placa-recife.jpg"
-                    alt="Grande placa com nome RECIFE">
-                </li>
-              </ul>
-            </div>
+            <img id="img-1" title="Marco Zero Recife"src="./img/Marco zero.jpeg" alt="imagem marco zero">
 
-             <div class="carrossel">
-                <div class="container" id="img">
-                    
-                   
-            
-               
-               
-            
-                
+            <h3 id="VejaMais">Veja mais:</h3>
+            <div class="my-slider">
+                <div>
+                    <img title="Cais do sertão" onclick="acao()" id="img-section" src="./img/cais do sertão.jpg"
+                        alt="imagem do ponto turistico cais do sertão">
                 </div>
+                <div>
+                    <img title="Estatuas de Brennand" onclick="acao2()" id="img-section" src="./img/brennand.jpg"
+                        alt="Estatua de brennand do outro lado do marco zero">
+                </div>
+                <div>
+                    <img title="Placa Recife" onclick="acao3()" id="img-section" src="./img/placa-recife.jpg"
+                        alt="Grande placa com nome RECIFE">
+
+                </div>
+                <div>
+                    <img title="Instituto Brennad" onclick="acao4()" id="img-section" src="./img/instituto-brennandjpg.jpg"
+                        alt="instituto ricardo brennand">
+                </div>
+                <div>
+                    <img title="Museu do homem do nordeste" onclick="acao5()" id="img-section" src="./img/homem-do-nordeste.jpg"
+                        alt="museu do homem do nordeste">
+                </div>
+            </div>
 
         </section>
 
@@ -73,7 +62,7 @@
                 <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
             </div>
 
-            <img class="img-modal" src="./img/cais do sertão.jpg" alt="imagem do cais do sertão">
+            <img title="Cais do sertão" class="img-modal" src="./img/cais do sertão.jpg" alt="imagem do cais do sertão">
             <h2 id="titulo-modal">Cais do sertão</h2>
             <p id="p-modal">Construído no local de antigos armazéns do Porto do Recife, o Cais do Sertão oferece aos
                 visitantes
@@ -93,10 +82,10 @@
 
         <div class="modal-2">
             <div onclick="fechar2()" class="fechar">
-                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre estatua do brennand">
             </div>
 
-            <img class="img-modal" src="./img/brennand.jpg" alt="Estatua de brennand do outro lado do marco zero">
+            <img title="Estatua Brennand" class="img-modal" src="./img/brennand.jpg" alt="Estatua de brennand do outro lado do marco zero">
             <h2 id="titulo-modal">Parque das esculturas de Brennand</h2>
             <p id="p-modal">O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na
                 cidade do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do
@@ -111,10 +100,10 @@
 
         <div class="modal-3">
             <div onclick="fechar3()" class="fechar">
-                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre a placa RECIFE">
             </div>
 
-            <img class="img-modal" src="./img/placa-recife.jpg" alt="Estatua de brennand do outro lado do marco zero">
+            <img title="Placa Recife" class="img-modal" src="./img/placa-recife.jpg" alt="Placa com nome de recife que fica no marco zero">
             <h2 id="titulo-modal">Cais do sertão</h2>
             <p id="p-modal">O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na
                 cidade do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do
@@ -126,13 +115,53 @@
             </a>
 
         </div>
+        <div class="modal-4">
+            <div onclick="fechar4()" class="fechar">
+                <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o instituto brennand">
+            </div>
 
+            <img title="instituto Brennand" class="img-modal" src="./img/instituto-brennandjpg.jpg"
+                alt="Estatua de brennand do outro lado do marco zero">
+            <h2 id="titulo-modal">Instituto Ricardo Brennand</h2>
+            <p id="p-modal">O Instituto Ricardo Brennand (IRB), também conhecido como Castelo de Brennand, é uma
+                instituição cultural brasileira sem fins lucrativos localizada na cidade do Recife, capital do estado de
+                Pernambuco. Foi eleito o melhor museu da América do Sul pelo site de viagens TripAdvisor. </p><br>
+            <p id="p-modal">Horários
+                Funcionamos de Terça a Domingo, das 13h às 17h.
+                Última entrada às 16h30.</p>
 
+            <a href="https://g.page/institutorb?share" target="_blank">
+                <button id="btn-modal"> <img id="icon-localização" src="./img/icons/geo-alt.svg"
+                        alt="">Localização</button>
+            </a>
+
+        </div>
+        <div class="modal-5">
+            <div onclick="fechar5()" class="fechar">
+                <img src="./img/icons/x-circle-fill.svg"
+                    alt="botão para fechar seção sobre o Museu do Homem do Nordeste">
+            </div>
+
+            <img title="Museu Homem do nordeste" class="img-modal" src="./img/homem-do-nordeste.jpg" alt="Museu do Homem do Nordeste">
+            <h2 id="titulo-modal">Museu do Homem do Nordeste</h2>
+            <p id="p-modal">O Instituto Ricardo Brennand (IRB), também conhecido como Castelo de Brennand, é uma
+                instituição cultural brasileira sem fins lucrativos localizada na cidade do Recife, capital do estado de
+                Pernambuco. Foi eleito o melhor museu da América do Sul pelo site de viagens TripAdvisor. </p><br>
+            <p id="p-modal">Horários
+                Funcionamos de Terça a Domingo, das 13h às 17h.
+                Última entrada às 16h30.</p>
+
+            <a href="https://g.page/institutorb?share" target="_blank">
+                <button id="btn-modal"> <img id="icon-localização" src="./img/icons/geo-alt.svg"
+                        alt="">Localização</button>
+            </a>
+
+        </div>
 
     </main>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src='./script.js'></script>
 </body>
 
