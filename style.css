@@ -142,7 +142,7 @@ margin-top: 6px;
   animation-duration: 800ms;
 
   border-radius: 9px;
-  border: 3px solid;
+  border: 2px solid;
 }
 
 @keyframes animate {
@@ -165,9 +165,9 @@ margin-top: 6px;
 }
 .img-modal {
   width: 60%;
-  height: 96%;
-  float: right;
-  margin-right: 8px;
+ 
+  float: left;
+  margin-left: 8px;
   margin-top: 5px;
 
   border-radius: 4px;
@@ -202,8 +202,10 @@ margin-top: 6px;
 
 /* responsividade*/
 @media (max-width:800px){
+  body{overflow-y: scroll; }
    body, .titulo{
     font-size: 90.5%;
+    
 
   }
   .titulo{
@@ -214,8 +216,68 @@ margin-top: 6px;
   }
   section{
     background-color: #FFD11D;
+    margin-left: 0%;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
   }
   main{
     display: block;
   }
+  #localização{
+    width: 70%;
+  height: 70px;
+
+  margin-top: 2%;
+  margin-left: 1%;
+  padding-bottom: 1%;
+  }
+
+  #img-1 {
+    margin-top: 2%;
+    max-width: 99%;
+    height: 50%;
+  
+    margin-left: 1px;
+    
+    
+  }
+  .modal-1, .modal-2, .modal-3, .modal-4, .modal-5 {
+    width: 95%;
+    height: 98%;
+
+    left: 1%;
+    top: 1%;
+    align-items: center;
+  }
+
+  .fechar{
+    margin-top: 1%;
+    margin-left: 94%;
+   
+  }
+  #titulo-modal{
+    display: grid;
+  }
+
+.img-modal {
+  margin-top: 6%;
+  height: 40%;
+  width: 95%;
+
+}
+#btn-modal{
+  margin-top: 1rem;
+  
+}
+  
+}
+@media (max-width:1100px){
+  #img-1{
+    margin-left: 20px;
+  }
+  section{
+    height: 700px;
+  }
+
 }
