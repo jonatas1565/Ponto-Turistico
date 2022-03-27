@@ -75,7 +75,6 @@ section {
   justify-content: space-evenly;
 }
 
-
 #img-1 {
   margin-top: 25px;
   width: 570px;
@@ -84,8 +83,6 @@ section {
   margin-left: 190px;
   
 }
-
-
 
 #img-section {
   width: 300px;
@@ -96,8 +93,6 @@ margin-top: 3px;
   
  
 }
-
-
 
 #img-section {
   max-width: 98%;
@@ -272,9 +267,9 @@ margin-top: 6px;
 }
   
 }
-@media (max-width:1100px){
+@media (min-width:900px){
   #img-1{
-    margin-left: 20px;
+    margin-left: 17%;
   }
   section{
     height: 700px;

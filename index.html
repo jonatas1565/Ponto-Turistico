@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    
 
     <title>Marco zero </title>
     <link rel="stylesheet" href="./style.css">
@@ -17,6 +18,7 @@
 
 <body>
     <main>
+        <!--Parte principal-->
         <div class="titulo">
             <h1>Marco Zero Recife</h1>
 
@@ -27,10 +29,12 @@
                 <button id="localização"> <img id="icon-localização" src="./img/icons/geo-alt.svg" alt="">
                     Localização</button></a>
         </div>
+         <!--Segunda parte, imagem do marco zero-->
         <section>
             <img id="img-1" title="Marco Zero Recife"src="./img/Marco zero.jpeg" alt="imagem marco zero">
 
             <h3 id="VejaMais">Veja mais:</h3>
+             <!--Carrosel-->
             <div class="my-slider">
                 <div>
                     <img title="Cais do sertão" onclick="acao()" id="img-section" src="./img/cais do sertão.jpg"
@@ -56,7 +60,7 @@
             </div>
 
         </section>
-
+ <!--Todos os modals-->
         <div class="modal-1">
             <div onclick="fechar()" class="fechar">
                 <img src="./img/icons/x-circle-fill.svg" alt="botão para fechar seção sobre o cais do sertão">
@@ -160,7 +164,7 @@
         </div>
 
     </main>
-
+ <!--JavaScript pag e tiny slider-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src='./script.js'></script>
