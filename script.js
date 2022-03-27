@@ -71,7 +71,7 @@ function fechar5(){
    modal.style.display = 'none';
 }
 
-//carrossel
+//carrossel//
 let slider = tns({
     container : ".my-slider",
     "items": 3,
